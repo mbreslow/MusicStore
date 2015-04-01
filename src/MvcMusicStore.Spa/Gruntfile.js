@@ -181,7 +181,6 @@ module.exports = function (grunt) {
         }
     });
 
-    //grunt.registerTask('test', ['jshint', 'qunit']);
     grunt.registerTask('ts', ['tslint', 'tsng', 'typescript:dev']);
     grunt.registerTask('dev', ['clean', 'copy', 'less:dev', 'ts']);
     grunt.registerTask('release', ['clean', 'copy', 'uglify', 'less:release', 'typescript:release']);
